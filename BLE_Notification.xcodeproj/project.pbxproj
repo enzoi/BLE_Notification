@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF446B201FA00AB200EFAFCE /* MyFavoriteViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF446B1F1FA00AB200EFAFCE /* MyFavoriteViewCell.swift */; };
+		CF446B261FA00F9000EFAFCE /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF446B251FA00F9000EFAFCE /* PhotoStore.swift */; };
+		CF446B291FA010CF00EFAFCE /* ContentfulClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF446B281FA010CF00EFAFCE /* ContentfulClient.swift */; };
+		CF446B2A1FA10C5000EFAFCE /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF446B231FA00E9700EFAFCE /* PhotoDataSource.swift */; };
+		CF6CE27D1F9FF24600164ED6 /* MyFavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6CE27C1F9FF24600164ED6 /* MyFavoriteVC.swift */; };
+		CF6CE27F1F9FF26800164ED6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6CE27E1F9FF26800164ED6 /* LoginVC.swift */; };
+		CF6CE2811F9FF28700164ED6 /* MyFavoriteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6CE2801F9FF28700164ED6 /* MyFavoriteDetailVC.swift */; };
+		CF6CE2831F9FF2BF00164ED6 /* BeaconDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6CE2821F9FF2BF00164ED6 /* BeaconDetailVC.swift */; };
 		CF8FCB141F90685A008CEE21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCB131F90685A008CEE21 /* AppDelegate.swift */; };
-		CF8FCB161F90685A008CEE21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCB151F90685A008CEE21 /* ViewController.swift */; };
+		CF8FCB161F90685A008CEE21 /* MyLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCB151F90685A008CEE21 /* MyLocationVC.swift */; };
 		CF8FCB191F90685A008CEE21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8FCB171F90685A008CEE21 /* Main.storyboard */; };
 		CF8FCB1C1F90685A008CEE21 /* BLE_Notification.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCB1A1F90685A008CEE21 /* BLE_Notification.xcdatamodeld */; };
 		CF8FCB1E1F90685A008CEE21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8FCB1D1F90685A008CEE21 /* Assets.xcassets */; };
@@ -16,9 +24,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF446B1D1FA0097200EFAFCE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CF446B1F1FA00AB200EFAFCE /* MyFavoriteViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteViewCell.swift; sourceTree = "<group>"; };
+		CF446B231FA00E9700EFAFCE /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
+		CF446B251FA00F9000EFAFCE /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		CF446B281FA010CF00EFAFCE /* ContentfulClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentfulClient.swift; sourceTree = "<group>"; };
+		CF6CE27C1F9FF24600164ED6 /* MyFavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteVC.swift; sourceTree = "<group>"; };
+		CF6CE27E1F9FF26800164ED6 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		CF6CE2801F9FF28700164ED6 /* MyFavoriteDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteDetailVC.swift; sourceTree = "<group>"; };
+		CF6CE2821F9FF2BF00164ED6 /* BeaconDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconDetailVC.swift; sourceTree = "<group>"; };
 		CF8FCB101F90685A008CEE21 /* BLE_Notification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLE_Notification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8FCB131F90685A008CEE21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF8FCB151F90685A008CEE21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF8FCB151F90685A008CEE21 /* MyLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationVC.swift; sourceTree = "<group>"; };
 		CF8FCB181F90685A008CEE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF8FCB1B1F90685A008CEE21 /* BLE_Notification.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BLE_Notification.xcdatamodel; sourceTree = "<group>"; };
 		CF8FCB1D1F90685A008CEE21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,9 +54,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF446B271FA0109C00EFAFCE /* Contenful */ = {
+			isa = PBXGroup;
+			children = (
+				CF446B281FA010CF00EFAFCE /* ContentfulClient.swift */,
+			);
+			path = Contenful;
+			sourceTree = "<group>";
+		};
+		CF446B2B1FA10D6900EFAFCE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FCB221F90685A008CEE21 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF6CE2791F9FF1B800164ED6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FCB151F90685A008CEE21 /* MyLocationVC.swift */,
+				CF6CE2821F9FF2BF00164ED6 /* BeaconDetailVC.swift */,
+				CF6CE27C1F9FF24600164ED6 /* MyFavoriteVC.swift */,
+				CF446B1F1FA00AB200EFAFCE /* MyFavoriteViewCell.swift */,
+				CF6CE2801F9FF28700164ED6 /* MyFavoriteDetailVC.swift */,
+				CF6CE27E1F9FF26800164ED6 /* LoginVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CF6CE27A1F9FF1CF00164ED6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FCB171F90685A008CEE21 /* Main.storyboard */,
+				CF8FCB1F1F90685A008CEE21 /* LaunchScreen.storyboard */,
+				CF8FCB1D1F90685A008CEE21 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		CF6CE27B1F9FF1F200164ED6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF446B271FA0109C00EFAFCE /* Contenful */,
+				CF8FCB1A1F90685A008CEE21 /* BLE_Notification.xcdatamodeld */,
+				CF446B231FA00E9700EFAFCE /* PhotoDataSource.swift */,
+				CF446B251FA00F9000EFAFCE /* PhotoStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CF8FCB071F90685A008CEE21 = {
 			isa = PBXGroup;
 			children = (
+				CF446B1D1FA0097200EFAFCE /* Default-568h@2x.png */,
 				CF8FCB121F90685A008CEE21 /* BLE_Notification */,
 				CF8FCB111F90685A008CEE21 /* Products */,
 			);
@@ -57,12 +125,10 @@
 			isa = PBXGroup;
 			children = (
 				CF8FCB131F90685A008CEE21 /* AppDelegate.swift */,
-				CF8FCB151F90685A008CEE21 /* ViewController.swift */,
-				CF8FCB171F90685A008CEE21 /* Main.storyboard */,
-				CF8FCB1D1F90685A008CEE21 /* Assets.xcassets */,
-				CF8FCB1F1F90685A008CEE21 /* LaunchScreen.storyboard */,
-				CF8FCB221F90685A008CEE21 /* Info.plist */,
-				CF8FCB1A1F90685A008CEE21 /* BLE_Notification.xcdatamodeld */,
+				CF6CE27B1F9FF1F200164ED6 /* Model */,
+				CF6CE2791F9FF1B800164ED6 /* Controllers */,
+				CF6CE27A1F9FF1CF00164ED6 /* Assets */,
+				CF446B2B1FA10D6900EFAFCE /* Supporting Files */,
 			);
 			path = BLE_Notification;
 			sourceTree = "<group>";
@@ -139,9 +205,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF8FCB161F90685A008CEE21 /* ViewController.swift in Sources */,
+				CF446B261FA00F9000EFAFCE /* PhotoStore.swift in Sources */,
+				CF6CE27D1F9FF24600164ED6 /* MyFavoriteVC.swift in Sources */,
+				CF8FCB161F90685A008CEE21 /* MyLocationVC.swift in Sources */,
 				CF8FCB1C1F90685A008CEE21 /* BLE_Notification.xcdatamodeld in Sources */,
+				CF6CE2831F9FF2BF00164ED6 /* BeaconDetailVC.swift in Sources */,
+				CF446B201FA00AB200EFAFCE /* MyFavoriteViewCell.swift in Sources */,
 				CF8FCB141F90685A008CEE21 /* AppDelegate.swift in Sources */,
+				CF446B2A1FA10C5000EFAFCE /* PhotoDataSource.swift in Sources */,
+				CF446B291FA010CF00EFAFCE /* ContentfulClient.swift in Sources */,
+				CF6CE27F1F9FF26800164ED6 /* LoginVC.swift in Sources */,
+				CF6CE2811F9FF28700164ED6 /* MyFavoriteDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TVHJ8VSCRK;
-				INFOPLIST_FILE = BLE_Notification/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BLE_Notification/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ytk.BLE-Notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,7 +369,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TVHJ8VSCRK;
-				INFOPLIST_FILE = BLE_Notification/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BLE_Notification/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ytk.BLE-Notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";

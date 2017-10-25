@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="moL-93-ZEE">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--LogIn-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="LogIn" id="BYZ-38-t0r" customClass="ViewController" customModule="BLE_Notification" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="LogIn" id="BYZ-38-t0r" customClass="LoginVC" customModule="BLE_Notification" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,47 +27,60 @@
         <!--My Location-->
         <scene sceneID="ttS-cV-GZL">
             <objects>
-                <viewController id="hTP-aP-mFN" sceneMemberID="viewController">
+                <viewController title="My Location" id="hTP-aP-mFN" customClass="MyLocationVC" customModule="BLE_Notification" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6bN-Z7-SAS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UKa-XO-Qe8">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UKa-XO-Qe8">
                                 <rect key="frame" x="0.0" y="64" width="375" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="CxI-21-Htn"/>
+                                    <constraint firstAttribute="width" constant="375" id="dJa-BR-iiR"/>
+                                </constraints>
                             </mapView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Maz-rf-vLr">
                                 <rect key="frame" x="0.0" y="211" width="375" height="407"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dVp-cj-s6S">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3H3-cK-CrT">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dVp-cj-s6S" id="cGU-R8-fvN">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3H3-cK-CrT" id="ctt-ma-AKx">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="XnW-Qj-fxV" kind="show" id="ENe-rJ-WxU"/>
+                                            <segue destination="XnW-Qj-fxV" kind="show" id="gjP-jr-Ve7"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UKa-XO-Qe8" firstAttribute="leading" secondItem="6gn-4A-X2R" secondAttribute="leading" id="d8k-Fe-PxH"/>
+                            <constraint firstItem="UKa-XO-Qe8" firstAttribute="trailing" secondItem="6gn-4A-X2R" secondAttribute="trailing" id="jfc-lc-dX9"/>
+                            <constraint firstItem="UKa-XO-Qe8" firstAttribute="top" secondItem="6gn-4A-X2R" secondAttribute="top" id="mPp-ed-w3L"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6gn-4A-X2R"/>
                     </view>
-                    <navigationItem key="navigationItem" title="My Location" id="L4d-yL-cpy"/>
+                    <navigationItem key="navigationItem" title="My Location" id="Alz-5n-2ho">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="mZx-eX-Tr7"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="UKa-XO-Qe8" id="SUH-9e-f1L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ex-hN-Fcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2568.8000000000002" y="-562.66866566716647"/>
         </scene>
-        <!--View Controller-->
+        <!--Beacon DetailVC-->
         <scene sceneID="94u-Sg-Itb">
             <objects>
-                <viewController id="XnW-Qj-fxV" sceneMemberID="viewController">
+                <viewController id="XnW-Qj-fxV" customClass="BeaconDetailVC" customModule="BLE_Notification" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fka-ol-SwZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,12 +90,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RmA-4F-RJQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3281" y="-563"/>
+            <point key="canvasLocation" x="3274" y="-563"/>
         </scene>
-        <!--Saved Trees-->
+        <!--My Favorate-->
         <scene sceneID="Scj-iT-fRx">
             <objects>
-                <viewController title="Saved Trees" id="WDp-55-juF" sceneMemberID="viewController">
+                <viewController title="My Favorate" id="WDp-55-juF" customClass="MyFavoriteVC" customModule="BLE_Notification" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YNW-Am-wMZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,39 +105,60 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fAN-2j-VmD">
-                                    <size key="itemSize" width="98" height="85"/>
+                                    <size key="itemSize" width="122" height="122"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Mas-RK-hn4">
-                                        <rect key="frame" x="0.0" y="0.0" width="98" height="85"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="photoViewCell" id="Mas-RK-hn4" customClass="MyFavoriteViewCell" customModule="BLE_Notification" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="122"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="98" height="85"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="122" height="122"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nNM-hm-Mnc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="122" height="122"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4Im-i1-quj">
+                                                    <rect key="frame" x="51" y="51" width="20" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </activityIndicatorView>
+                                            </subviews>
                                         </view>
                                         <connections>
+                                            <outlet property="imageView" destination="nNM-hm-Mnc" id="oUg-t1-qWd"/>
+                                            <outlet property="spinner" destination="4Im-i1-quj" id="asi-uo-9eK"/>
                                             <segue destination="QRQ-TD-f4N" kind="show" id="kgh-Em-ea5"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="WDp-55-juF" id="5PF-Ls-Brk"/>
+                                    <outlet property="delegate" destination="WDp-55-juF" id="U3v-HL-cnR"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="NUr-6r-jlP"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Saved Trees" id="zX0-Zc-VAs"/>
+                    <navigationItem key="navigationItem" title="My Favorite" id="zX0-Zc-VAs">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="BVV-Ud-a8z"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="jiG-u7-oLe" id="b8g-Z9-tEW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9nh-1N-her" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2568.8000000000002" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2568.8000000000002" y="176.76161919040482"/>
         </scene>
-        <!--Tree Details-->
+        <!--Details-->
         <scene sceneID="PRC-FQ-LcW">
             <objects>
-                <viewController title="Tree Details" id="QRQ-TD-f4N" sceneMemberID="viewController">
+                <viewController title="Details" id="QRQ-TD-f4N" customClass="MyFavorateDetailVC" customModule="BLE_Notification" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lFu-uG-QRo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,13 +168,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wnk-f1-ERF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3280.8000000000002" y="133.5832083958021"/>
+            <point key="canvasLocation" x="3273" y="177"/>
         </scene>
-        <!--Item-->
+        <!--My Favorate-->
         <scene sceneID="HuH-zQ-lnp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UTD-Ma-frj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ybg-eM-hJh"/>
+                    <tabBarItem key="tabBarItem" title="My Favorate" image="icon_listview-selected" id="ybg-eM-hJh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aRw-jw-2xk">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -153,13 +187,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="at3-uX-6Wc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1847.2" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1847" y="177"/>
         </scene>
-        <!--Item-->
+        <!--My Location-->
         <scene sceneID="UXg-oV-jUo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CCv-8E-r6B" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="PdK-PA-2ip"/>
+                    <tabBarItem key="tabBarItem" title="My Location" image="icon_mapview-selected" id="PdK-PA-2ip"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IBx-Gi-yQO">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -180,6 +214,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="moL-93-ZEE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3aj-2r-ju4">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -193,4 +228,8 @@
             <point key="canvasLocation" x="1028" y="-265"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_listview-selected" width="75" height="50"/>
+        <image name="icon_mapview-selected" width="75" height="50"/>
+    </resources>
 </document>
